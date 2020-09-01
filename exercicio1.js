@@ -10,5 +10,4 @@ function imprimaQuadrado(n) {
         else
             linha += "*";
     }
-
 }
