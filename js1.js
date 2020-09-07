@@ -1,1 +1,1 @@
-document.getElementsByTagName("p")[0].innerText = "Me vejo ainda mais feliz, dedicado, bonitão e já manjando todo o necessário pra ser um Desenvolvedor, INCLUSIVE em Mobile."
+document.getElementsByTagName("p")[0].innerText = "Me vejo ainda mais feliz, proativo, eficiente, amoroso, dedicado, bonitão e já manjando todo o necessário pra ser um Desenvolvedor, INCLUSIVE em Mobile."
