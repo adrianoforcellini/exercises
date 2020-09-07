@@ -1,4 +1,6 @@
-function ehPalindromo(palavra) {
-    let aocontrario = palavra.split('').reverse().join(''); //str-> array -> array^(-1) -> str^(-1)
-    return palavra === aocontrario; // retorna true se str = str^(-1)
+function isDividedBy(number, a, b) {
+    let n = number;
+    let div1 = n % a;
+    let div2 = n % b;
+    return div1 && div2 === 0;
 }
