@@ -1,0 +1,1 @@
+document.getElementsByClassName("center-content")[0].style.backgroundColor = 'rgb( 333 , 333 , 333 )'
