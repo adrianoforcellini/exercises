@@ -1,0 +1,1 @@
+document.getElementsByTagName("p")[0].innerText + "  " + document.getElementsByTagName("p")[1].innerText + "  " + document.getElementsByTagName("p")[2].innerText;
