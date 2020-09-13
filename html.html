@@ -40,9 +40,22 @@
             <strong>discount</strong> o resultado da multiplicação.
         </p>
         <script language="javascript" type="text/javascript">
-            //JavaScript para a tarefa 2
-            //JavaScript para a tarefa 2
-            //JavaScript para a tarefa 2
+            let productPrice = 59.99;
+            let discount = 0.3;
+            let button = document.createElement('button');
+            button.setAttribute('class', 'button2')
+            button.appendChild(document.createTextNode('Multiplicação'));
+            document.body.appendChild(button);
+            //como criar um botão dinâmicamente por DevMedia: https://www.devmedia.com.br/forum/criar-botao-dinamicamente-no-javascript/554111
+
+            function multiplicar() {
+                let desconto = productPrice * discount;
+                alert("você recebeu um desconto de R$" + desconto + "!")
+            };
+            const clicou2 = document.querySelector(".button2");
+
+
+            clicou2.addEventListener("click", multiplicar);
         </script>
         <hr />
         <h2>Bônus</h2>
