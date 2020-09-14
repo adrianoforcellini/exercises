@@ -15,7 +15,11 @@
         img.style.left = '0px';
 
         function catWalk() {
-            img.style.left = (parseInt(img.style.left) + 10) + 'px';
+            let left = parseInt(img.style.left);
+            img.style.left = (left + 10) + 'px';
+            if (left > (window.innerWidth - img.width)) {
+                img.style.left = '0px';
+            }
         }
         window.setInterval(catWalk, 50);
         //sobre parseInt : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/parseInt
