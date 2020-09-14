@@ -18,12 +18,15 @@
             let left = parseInt(img.style.left);
             img.style.left = (left + 10) + 'px';
             if (left > (window.innerWidth - img.width)) {
-                img.style.left = '0px';
+                img.style.left = (left - 10) + 'px';
             }
         }
         window.setInterval(catWalk, 50);
         //sobre parseInt : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/parseInt
         //sobre window.setInterval https://www.w3schools.com/jsref/met_win_setinterval.asp
+        goDark()
+        document.getElementsByClassName
+        addEventListener
     </script>
 </body>
 
