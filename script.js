@@ -43,3 +43,8 @@ for (let key in estados) {
 }
 
 //adaptado a partir de : http://devfuria.com.br/javascript/manipulando-combobox-select-com-javascript/
+
+let enviar = document.querySelector("#envio");
+enviar.addEventListener("click", function() {
+    console.log("botaofunfo");
+});
