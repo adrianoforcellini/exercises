@@ -27,4 +27,19 @@ let estados = {
     SE: "Sergipe",
     TO: "Tocantins",
 };
-//Nosso grande Gus mandou essa, vai ser util em breve.
+
+//valeu Gus!!!
+
+function selecionaEstado(key, value) {
+    let estado = document.querySelector("#estado");
+    let selecao = document.createElement("option");
+    estado.appendChild(selecao);
+    selecao.value = key;
+    selecao.innerHTML = value;
+}
+
+for (let key in estados) {
+    selecionaEstado(key, estados[key]);
+}
+
+//adaptado a partir de : http://devfuria.com.br/javascript/manipulando-combobox-select-com-javascript/
