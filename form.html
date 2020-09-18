@@ -10,30 +10,46 @@
 <body>
     <form action="" method="POST">
         <fieldset>
-            <div><label>Nome</label>
-                <input type="text" maxlength="40" required="required" /></div><br>
-            <div> <label>E-mail</label>
-                <input type="text" maxlength="50" required="required" /></div><br>
-            <div> <label>CPF</label>
-                <input type="text" maxlength="11" required="required" /></div><br>
-            <div> <label>Endereço</label>
-                <input type="text" maxlength="200" required="required" /></div><br>
-            <div> <label>Cidade</label>
-                <input type="text" maxlength="28" required="required" /></div><br>
+            <h2>Dados Pessoais</h2>
+            <div><label>Nome</label><br>
+                <input type="text" maxlength="40" required="required"></div><br>
+            <div> <label>E-mail</label><br>
+                <input type="text" maxlength="50" required="required"></div><br>
+            <div> <label>CPF</label><br>
+                <input type="text" maxlength="11" required="required"></div><br>
+            <div> <label>Endereço</label><br>
+                <input type="text" maxlength="200" required="required"></div><br>
+            <div> <label>Cidade</label><br>
+                <input type="text" maxlength="28" required="required"></div><br>
             <div>
-                <label>Estado</label>
-                <select id="estado"></select>
+                <label>Estado</label><br>
+                <select id="estado" required="required"></select>
 
-            </div>
+            </div><br><br><br>
             <div>
                 <label>Tipo</label>
-                <input type="radio" name="tipo" required="required" />
+                <input type="radio" name="tipo" required="required">
                 <label>Casa</label>
-                <input type="radio" name="tipo" required="required" />
+                <input type="radio" name="tipo" required="required">
                 <label>Apartamento</label>
             </div>
 
         </fieldset>
+        <fieldset>
+            <h2>Dados Pessoais</h2>
+            <div> <label>Resumo Do Currículo</label><br>
+                <textarea type="text" maxlength="1000" rows="10" cols="35" required="required">                              
+      </textarea><br><br>
+                <div><label>Cargo</label><br>
+                    <input type="text" maxlength="40" required="required"></div><br>
+                <div><label>Descrição De Cargo</label><br>
+                    <input type="text" maxlength="500" required="required"></div><br>
+                <div><label>Data de Início</label><br>
+                    <input type="text" required="required"></div><br>
+            </div>
+            <button>Enviar</button>
+        </fieldset>
+
     </form>
     <script src="script.js"></script>
 </body>
