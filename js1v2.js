@@ -24,3 +24,5 @@ function mudaTexto() {
     mudaTagp(, 1, 2, 3 ou 4).innerText = "novo texto"
 
 }
+
+//
