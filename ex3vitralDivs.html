@@ -1,130 +1,132 @@
 <!DOCTYPE html>
 <html>
+<center>
 
-<body>
-    <!-- creating the squares and columns divs -->
-    <div id="stack">
-        <div class="column_left">
-            <div>
+    <body><br><br><br><br><br><br><br><br><br>
+        <!-- creating the squares and columns divs -->
+        <div id="stack">
+            <div class="column_left">
                 <div>
-                    <div>V
+                    <div>
+                        <div>V
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>V
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="column_right">
                 <div>
-                    <div>V
+                    <div>
+                        <div>Q
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>!!!
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column_right">
-            <div>
-                <div>
-                    <div>Q
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>!!!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <style>
-        #stack {
-            height: 20rem;
-            width: 20rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            border: solid black 4px;
-        }
-        
-        .column_left,
-        .column_right {
-            height: 18rem;
-            width: 8rem;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            border: solid black 4px;
-        }
-        
-        .column_left>div,
-        .column_right>div {
-            height: 5rem;
-            width: 5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-            border: solid black 4px;
-        }
-        
-        div>div>div>div {
-            height: 2.5rem;
-            width: 2.5rem;
-            border: solid black 4px;
-        }
-        
-        div>div>div>div>div {
-            height: 1rem;
-            width: 1rem;
-            position: absolute;
-            transform: translate(9px, 9px);
-            margin: auto;
-            border: solid black 3px;
-        }
-    </style>
-    <script>
-        let divRed = document.querySelector('#stack');
-        divRed.style.backgroundColor = 'purple';
-        // <div class="column_left"> 
-        let divBlue = document.querySelector('.column_left');
-        divBlue.style.backgroundColor = 'DarkGreen';
+        <style>
+            #stack {
+                height: 20rem;
+                width: 20rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                border: solid black 4px;
+            }
+            
+            .column_left,
+            .column_right {
+                height: 18rem;
+                width: 8rem;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border: solid black 4px;
+            }
+            
+            .column_left>div,
+            .column_right>div {
+                height: 5rem;
+                width: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                border: solid black 4px;
+            }
+            
+            div>div>div>div {
+                height: 2.5rem;
+                width: 2.5rem;
+                border: solid black 4px;
+            }
+            
+            div>div>div>div>div {
+                height: 1rem;
+                width: 1rem;
+                position: absolute;
+                transform: translate(9px, 9px);
+                margin: auto;
+                border: solid black 3px;
+            }
+        </style>
+        <script>
+            let divRed = document.querySelector('#stack');
+            divRed.style.backgroundColor = 'purple';
+            // <div class="column_left"> 
+            let divBlue = document.querySelector('.column_left');
+            divBlue.style.backgroundColor = 'DarkGreen';
 
-        //<div class="column_right">
-        let divGreen = document.querySelector('.column_right');
-        divGreen.style.backgroundColor = 'MidnightBlue';
+            //<div class="column_right">
+            let divGreen = document.querySelector('.column_right');
+            divGreen.style.backgroundColor = 'MidnightBlue';
 
 
 
-        let divA = document.querySelectorAll('.column_left > div')
+            let divA = document.querySelectorAll('.column_left > div')
 
-        divA[0].style.backgroundColor = 'aquamarine'
-        divA[1].style.backgroundColor = 'DarkSlateGray		'
-
-
-        let div1 = document.querySelectorAll('.column_left > div > div')
-
-        div1[0].style.backgroundColor = 'purple';
-        div1[1].style.backgroundColor = 'brown';
-
-        let divB = document.querySelectorAll('.column_right > div')
-
-        divB[0].style.backgroundColor = 'silver'
-        divB[1].style.backgroundColor = 'gold'
+            divA[0].style.backgroundColor = 'aquamarine'
+            divA[1].style.backgroundColor = 'DarkSlateGray		'
 
 
-        let div2 = document.querySelectorAll('.column_right > div > div')
-        div2[0].style.backgroundColor = 'PowderBlue';
-        div2[1].style.backgroundColor = 'black';
+            let div1 = document.querySelectorAll('.column_left > div > div')
 
-        let divC = document.querySelectorAll('.column_right > div > div > div')
-        divC[0].style.backgroundColor = 'snow';
-        divC[1].style.backgroundColor = 'whitesmoke';
+            div1[0].style.backgroundColor = 'purple';
+            div1[1].style.backgroundColor = 'brown';
+
+            let divB = document.querySelectorAll('.column_right > div')
+
+            divB[0].style.backgroundColor = 'silver'
+            divB[1].style.backgroundColor = 'gold'
 
 
-        let divD = document.querySelectorAll('.column_left > div > div > div')
-        divD[0].style.backgroundColor = 'GhostWhite';
-        divD[1].style.backgroundColor = 'white';
-    </script>
+            let div2 = document.querySelectorAll('.column_right > div > div')
+            div2[0].style.backgroundColor = 'PowderBlue';
+            div2[1].style.backgroundColor = 'black';
 
-</body>
+            let divC = document.querySelectorAll('.column_right > div > div > div')
+            divC[0].style.backgroundColor = 'snow';
+            divC[1].style.backgroundColor = 'whitesmoke';
+
+
+            let divD = document.querySelectorAll('.column_left > div > div > div')
+            divD[0].style.backgroundColor = 'GhostWhite';
+            divD[1].style.backgroundColor = 'white';
+        </script>
+
+    </body>
+</center>
 
 </html>
