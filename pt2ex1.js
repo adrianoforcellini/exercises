@@ -1,8 +1,1 @@
-const fator = (n) => {
-let soma = 0;
-for ( i=1; i <= n ; i++){
-soma += n*i 
-
-}
-return soma
-}
+const fatorial = (x) => { if(x<=1)return 1;else return x * (x-1);}
