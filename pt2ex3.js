@@ -15,8 +15,10 @@ document.getElementById('bt').addEventListener('click', () => {
         document.getElementById('p').innerText = "0";
     }
 
-    if (clickCount > 70) {
-        document.getElementById('bt').innerText = "Beleza, vamo continuar!!!...Parabéns, vc mereceu!!!"
+    if (clickCount > 50) {
+        document.getElementById('bt').innerText = `Beleza, vamo continuar!!!
+        ...Parabéns, vc mereceu!!!`
         document.getElementById('p').innerText = clickCount;
+
     }
 });
