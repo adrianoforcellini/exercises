@@ -1,0 +1,1 @@
+A ordem é A, B e C, pois não existe assincronissidade nas linhas comentadas.
